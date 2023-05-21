@@ -1,0 +1,73 @@
+.home-background {
+  // background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  // background-image: url("../../assets/images/bg-hero.jpg");
+  // height: 100vh;
+  // text-align: center;
+  // font-family: Arial, Helvetica, sans-serif;
+  // padding-top: 15px;
+
+  .section {
+    padding: 4.5rem 0 2rem;
+  }
+
+  .background-image {
+    height: 629px;
+    background-image: url("../../assets/images/bg-cafe-shop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .background-title {
+      text-align: center;
+      color: #fff;
+
+      // background: linear-gradient(to right, #b224ef 0%, #7579ff 100%);
+      // background-clip: text;
+      // color: transparent;
+      font-weight: bold;
+      font-size: 24px;
+      z-index: 99;
+      margin-bottom: 1.5rem;
+    }
+
+    .background-button {
+      background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+      // background-color: #b1ff00;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      text-transform: uppercase;
+      transition: 0.3s;
+      z-index: 99;
+      font-weight: bold;
+
+      &:hover {
+        background: linear-gradient(135deg, #b224ef 0%, #7579ff 100%);
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        i {
+          margin-left: 8px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+module.export = {
+    isLoggedIn: null
+}

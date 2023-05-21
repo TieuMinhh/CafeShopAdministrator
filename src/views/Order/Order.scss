@@ -1,0 +1,101 @@
+.order-main-container {
+  // background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+
+  .title-order {
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    line-height: 1.6;
+  }
+
+  .table-order {
+    #main-order {
+      background-color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+
+      tr {
+        // &:nth-child(even) {
+        //   background-color: #f2f2f2;
+        // }
+
+        &:hover {
+          background-color: #ddd;
+        }
+
+        th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: center;
+          // background-color: #0d6efd;
+          background-color: #ddd;
+          // background: linear-gradient(to right, #6dd5fa, #ffffff);
+          color: #000;
+          border: 1px solid #fff;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        td {
+          font-family: "Nunito", sans-serif;
+          border: 0.5px solid #ddd;
+          padding: 14px;
+          color: #000;
+          text-align: center;
+          font-size: 15px;
+          font-weight: bold;
+          opacity: 0.9;
+
+          .btn-submit {
+            background-color: #00ff00;
+            padding: 8px 16px;
+            margin-right: 15px;
+            border-radius: 8px;
+
+            &:hover {
+              background-color: #006400;
+              color: #fff;
+            }
+          }
+
+          .btn-complete {
+            background-color: #1e90ff;
+            padding: 8px 16px;
+            border-radius: 8px;
+
+            &:hover {
+              background-color: #00bfff;
+              color: #fff;
+            }
+          }
+
+          .btn-cancel {
+            background-color: #ff0000;
+            padding: 8px 16px;
+            border-radius: 8px;
+
+            &:hover {
+              background-color: #dc143c;
+              color: #fff;
+            }
+          }
+
+          .btn-detail {
+            background-color: transparent;
+            text-decoration: underline;
+            color: blueviolet;
+          }
+        }
+      }
+    }
+  }
+}

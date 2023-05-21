@@ -1,0 +1,65 @@
+.order-detail-main-container {
+  // background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+
+  .order-detail-title {
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.6;
+  }
+
+  .table-order-detail {
+    #main-order-detail {
+      background-color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+
+      tr {
+        // &:nth-child(even) {
+        //   background-color: #f2f2f2;
+        // }
+
+        &:hover {
+          background-color: #ddd;
+        }
+
+        th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: center;
+          // background-color: #0d6efd;
+          background-color: #ddd;
+          // background: linear-gradient(to right, #6dd5fa, #ffffff);
+          color: #000;
+          border: 1px solid #fff;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        td {
+          border: 0.5px solid #ddd;
+          padding: 16px;
+          color: #000;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+          opacity: 0.9;
+        }
+      }
+
+      .total-price {
+        font-size: 24px;
+        margin-top: 32px;
+      }
+    }
+  }
+}

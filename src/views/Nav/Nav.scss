@@ -1,0 +1,95 @@
+.navbar {
+  position: relative;
+  z-index: 2;
+  height: 84px;
+
+  .navbar-container {
+    background: #000000 url("../../assets/images/black.jpg") repeat center /
+      cover;
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    top: 0px;
+    line-height: 100%;
+    // padding-right: 15px;
+    // padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .navbar-logo {
+      display: inline-block;
+      position: absolute;
+      // top: -45px;
+      left: 100px;
+
+      img {
+        margin-left: 50px;
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    .menu-list {
+      margin-right: 450px;
+      // margin-right: 500px; // Thêm vào cho vui
+      float: right;
+
+      li {
+        float: left;
+        // margin-left: 40px; // Thêm vào cho vui
+
+        & ~ li::before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 6px;
+          height: 6px;
+          background: #b1ff00;
+          transform: rotate(45deg);
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          color: aliceblue;
+          display: inline-block;
+          height: 45px;
+          line-height: 85px;
+          text-align: center;
+          padding: 0px 25px;
+          font-weight: 600;
+          border-radius: 16px;
+          font-family: "Merriweather";
+          text-transform: uppercase;
+
+          &.active {
+            color: #b1ff00;
+          }
+        }
+      }
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 150px;
+      width: 175px;
+      height: 44px;
+      text-align: center;
+      background: url("../../assets/images/green.png") no-repeat center;
+      list-style: none;
+
+      li {
+        a {
+          color: #000000;
+          text-decoration: none;
+          margin-left: -32px;
+          line-height: 40px;
+          font-family: "Merriweather";
+          font-weight: 750;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

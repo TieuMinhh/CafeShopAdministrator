@@ -1,0 +1,57 @@
+.modal-content {
+  .modal-header {
+    color: white;
+    background-color: green;
+    // background-color: green;
+    height: 50px;
+
+    button {
+      background-color: green;
+
+      span {
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
+
+.modal-product-body {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+
+    input,
+    .select-category {
+      border: 1px solid black;
+    }
+  }
+
+  .delete-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .ban-co-muon-xoa {
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    input {
+      border: 1px solid black;
+    }
+  }
+}
+
+.d-block {
+  border-radius: 10%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
